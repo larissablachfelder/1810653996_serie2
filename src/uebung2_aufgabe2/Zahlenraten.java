@@ -61,7 +61,7 @@ public class Zahlenraten
 
          //aufgabe4
          int versuche; //variable um versu
-         for (versuche=0; versuche<3; versuche++)
+         for (versuche=1; versuche<3; versuche++)
          {
 
              if (eingabe1 != zufallszahl) //beim nächsten mal vorher überprüfen, ob es richtig ist --> inhalt von else und if tausche und eingabe mit zufallszahl vergleichen
