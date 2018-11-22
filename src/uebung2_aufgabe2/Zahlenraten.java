@@ -16,6 +16,9 @@ public class Zahlenraten
         int zufallszahl = rnd.nextInt(max - min + 1) + min;
 
 
+        /* IF-ELSE-Block laut aufgabe 3 auskommentieren
+
+
         if(zufallszahl%2==0) //Hier überprüfe ich, ob die Zahl gerade ist indem ich %2 mit 0 vergleiche
         {
             JOptionPane.showMessageDialog(null, "Die Zahl ist gerade.");
@@ -26,10 +29,46 @@ public class Zahlenraten
         {
             JOptionPane.showMessageDialog(null, "Die Zahl ist ungerade.");
         }
+        */
+
+    //Aufgabe 3
+
+        // diese Zeile lest eine Zahl ein gibt es aber als String zurück
+
+        String eingabe = JOptionPane.showInputDialog("Bitte geben Sie eine Zahl zwischen 1 und 10 ein!");
 
 
+        //string in integer umwandeln
+
+        int eingabe1 = Integer.parseInt(eingabe);
+
+        /*Kann auch in einem Schritt erledigt werden:
+        int eingabe = Integer.ParseInt(JOptionPane.showInputDialog("Bitte geben Sie eine Zahl zwischen 1 und 10 ein!"));
+        dann müsste in der if auch die variable eingabe mit zufallszahl verglichen werden
+         */
+
+        if(eingabe1 == zufallszahl)
+        {
+            /*das funktioniert nicht, weil JOptionPane immer einen String zurückliefert und man keinen String
+            mit einem Integer vergleichen kann, deshalb muss man JOptionPane vorher in einen Integer umwandeln mithilfe
+            des Befehls Integer.parseInt
+             */
+
+            JOptionPane.showMessageDialog(null,"Die Zahlen stimmen überein.");
+        }
+
+        else if (eingabe1>=zufallszahl-2 && eingabe1<=zufallszahl+2)
+        {
+
+            JOptionPane.showMessageDialog(null, "Du bist innerhalb der Grenze von -2 und +2.");
+        }
 
 
+        else
+        {
+
+            JOptionPane.showMessageDialog(null, "Die Zahlen stimmen nicht überein.");
+        }
 
 
 
