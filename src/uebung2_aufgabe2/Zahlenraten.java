@@ -73,7 +73,7 @@ public class Zahlenraten
                      JOptionPane.showMessageDialog(null,"Die Zahlen stimmen überein.");
                  }
 
-                 else if (eingabe1>=zufallszahl-2 && eingabe1<=zufallszahl+2)
+                 else if ((zufallszahl-eingabe1)>= -2 && (zufallszahl-eingabe1)<=2)
                  {
 
                      JOptionPane.showMessageDialog(null, "Du bist innerhalb der Grenze von -2 und +2.");
