@@ -16,11 +16,8 @@ public class aufgabe5 {
         int zufallszahl = rnd.nextInt(max - min + 1) + min;
 
 
-        //Zahl des benutzers einrufen und in integer umwandeln
 
-
-
-        //aufgabe 5
+        //aufgabe 5 version 1 ohne grenzen
 
 
            int versuche = 0;
