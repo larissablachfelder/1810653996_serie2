@@ -60,7 +60,7 @@ public class Zahlenraten
 
 
          //aufgabe4
-         int versuche; //variable um versu
+          int versuche; //variable um versuche zu zählen
          for (versuche=1; versuche<3; versuche++)
          {
 
@@ -91,7 +91,7 @@ public class Zahlenraten
 
              else
              {
-                 JOptionPane.showMessageDialog(null, "Versuch zu Ende, du hast die Zahl " +zufallszahl + " erraten!");
+                 JOptionPane.showMessageDialog(null, "Du hast die Zahl " + zufallszahl + " erraten!");
 
                  break;
              }
@@ -101,11 +101,23 @@ public class Zahlenraten
              //überprüfen ob alle 3 versuche schon verbraucht sind
              if(versuche==2)
              {
-                 JOptionPane.showMessageDialog(null, "Du hast alle Versuche verbraucht! Die richtige Zahl wäre " + zufallszahl + " gewesen.");
+                 if (zufallszahl == eingabe1)
+                 {
+                     JOptionPane.showMessageDialog(null, "Beim letzten Versuch hats geklappt! Die Zahl ist: " +zufallszahl );
+                 }
+                 else
+                 {
+                     JOptionPane.showMessageDialog(null, "Du hast alle Versuche verbraucht! Die richtige Zahl wäre " + zufallszahl + " gewesen.");
+
+                 }
              }
 
 
-         }
+           }
+
+
+
+
 
 
     }
